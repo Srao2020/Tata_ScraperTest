@@ -294,21 +294,6 @@ Cons:
 - Final quality depends heavily on prompt design and source quality.
 - Larger source payloads can increase token usage and reduce focus.
 
-### Single-file output pattern
-
-Used in:
-- All major workflows
-
-What it does:
-- Clears prior files in the local `outputs/` folder and writes one main result file.
-
-Pros:
-- Keeps outputs easy to find.
-- Reduces clutter during repeated experimentation.
-
-Cons:
-- Overwrites previous runs unless they were copied elsewhere.
-- Not ideal for audit history or experiment tracking.
 
 ## Comparison Table
 
@@ -341,26 +326,3 @@ Use `AgentCall` when:
 Use `MultiScraper` when:
 - You already have a shortlist of articles.
 - You want the strongest weekly synthesis flow in this repo.
-
-## Main Strengths Of The Repo
-
-- Clear experimentation across multiple retrieval strategies.
-- Reusable prompting theme focused on Tata Capital's voice AI use case.
-- Good separation between quick scans, single-article analysis, and multi-article synthesis.
-- Browser-backed scraping improves coverage for modern sites.
-
-## Main Weaknesses Of The Repo
-
-- The repo is a collection of parallel experiments rather than one unified framework.
-- Extraction logic is generic HTML parsing, so publisher-specific cleanup is limited.
-- Outputs are overwritten instead of versioned.
-- Secret handling is convenient but not production-grade.
-- Prompt templates are duplicated across folders, which can make updates harder to keep in sync.
-
-## Recommended Next Improvements
-
-1. Move API keys fully to environment variables or a secret manager.
-2. Centralize shared prompt templates and shared Groq helper code.
-3. Add dated output filenames or run history to preserve experiments.
-4. Add publisher-specific article extraction rules for cleaner full-text scraping.
-5. Add a single root entrypoint that lets a user choose between workflow modes.
