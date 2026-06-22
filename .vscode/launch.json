@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "OnlyHeadings: scrape only",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/Headings/OnlyHeadings/scraper.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/Headings/OnlyHeadings",
+      "args": [
+        "--scrape-only"
+      ]
+    },
+    {
+      "name": "OnlyHeadings: send to Groq",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/Headings/OnlyHeadings/scraper.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/Headings/OnlyHeadings"
+    },
+    {
+      "name": "WholeArticle: scrape only",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/Headings/WholeArticle/scraper.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/Headings/WholeArticle",
+      "args": [
+        "--scrape-only"
+      ]
+    },
+    {
+      "name": "WholeArticle: send to Groq",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/Headings/WholeArticle/scraper.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/Headings/WholeArticle"
+    }
+  ]
+}

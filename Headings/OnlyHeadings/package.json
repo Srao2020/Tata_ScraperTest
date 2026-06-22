@@ -1,0 +1,12 @@
+{
+  "name": "onlyheadings",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-backed helper for the OnlyHeadings scraper.",
+  "scripts": {
+    "browser-fetch": "node browser_fetch.js"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}

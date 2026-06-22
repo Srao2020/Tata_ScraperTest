@@ -1,0 +1,12 @@
+{
+  "name": "multiarticle-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Batch article scraper that sends multiple full articles to Groq.",
+  "scripts": {
+    "browser-fetch": "node browser_fetch.js"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}
